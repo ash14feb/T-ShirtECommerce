@@ -1,0 +1,8 @@
+C:\Users\ashwa\source\repos\TShirtecommerce\ApiAccess\bin\Debug\ApiAccess.dll
+C:\Users\ashwa\source\repos\TShirtecommerce\ApiAccess\bin\Debug\ApiAccess.pdb
+C:\Users\ashwa\source\repos\TShirtecommerce\ApiAccess\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ashwa\source\repos\TShirtecommerce\ApiAccess\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ashwa\source\repos\TShirtecommerce\ApiAccess\obj\Debug\ApiAccess.csproj.CoreCompileInputs.cache
+C:\Users\ashwa\source\repos\TShirtecommerce\ApiAccess\obj\Debug\ApiAccess.csproj.CopyComplete
+C:\Users\ashwa\source\repos\TShirtecommerce\ApiAccess\obj\Debug\ApiAccess.dll
+C:\Users\ashwa\source\repos\TShirtecommerce\ApiAccess\obj\Debug\ApiAccess.pdb

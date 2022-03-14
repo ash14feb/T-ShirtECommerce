@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<section id="HomepageProducts"  class="section-products">
+    @RenderPage("~/Views/Home/HomePageProducts.cshtml")
+</section>
+
+
+
+<!-- Add/Edit Popup -->
+<div>@RenderPage("~/Views/Home/AddEditProduct.cshtml")</div>
+<!-- Product Details Popup -->
+<div>@RenderPage("~/Views/Home/ProductDetails.cshtml")</div>
+<!-- Delete Modal -->
+<div>  @RenderPage("~/Views/Shared/Modals/DeleteModal.cshtml")</div>
+
+<div id="divloader" style="display:none">
+    <center>
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </center>
+</div>
+
+
+
+

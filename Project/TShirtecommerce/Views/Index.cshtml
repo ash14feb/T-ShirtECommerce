@@ -1,0 +1,178 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<section class="section-products">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="header">
+                    <h3>Featured Product</h3>
+                    <h2>Popular Products</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Single Product -->
+            <div class="col-md-6 col-lg-4 col-xl-3 prdcard">
+                <div id="product-1" class="single-product">
+                    <div class="part-1" style="background-image: url('https://i.ibb.co/L8Nrb7p/1.jpg'); background-size: cover">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-edit"></i></a></li>
+                            <li><a href="#" onclick="callmodal();"><i class="fas fa-trash"></i></a></li>
+
+                        </ul>
+                    </div>
+                    <div class="part-2" style="text-align:">
+
+                        <!--<h3 class="product-title">Here Product Title</h3>-->
+                        <button type="button" class="btn btnprodinfo bgorange">XL</button>
+                        <button type="button" class="btn btnprodinfo bgorange">500$</button>
+                        <button type="button" class="btn btnprodinfo bgorange">M</button>
+                        <!--<h4 class="product-old-price">$79.99</h4>
+                        <h4 class="product-price">$49.99</h4>-->
+                    </div>
+                </div>
+            </div>
+            <!-- Single Product -->
+            <div class="col-md-6 col-lg-4 col-xl-3 prdcard">
+                <div id="product-1" class="single-product">
+                    <div class="part-1" style="background-image: url('https://i.ibb.co/L8Nrb7p/1.jpg'); background-size: cover">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-edit"></i></a></li>
+                            <li><a href="#" onclick="callmodal();"><i class="fas fa-trash"></i></a></li>
+
+                        </ul>
+                    </div>
+                    <div class="part-2">
+
+                        <!--<h3 class="product-title">Here Product Title</h3>-->
+                        <button type="button" class="btn btnprodinfo bgorange">XL</button>
+                        <button type="button" class="btn btnprodinfo bgorange">500$</button>
+                        <button type="button" class="btn btnprodinfo bgorange">M</button>
+                        <!--<h4 class="product-old-price">$79.99</h4>
+                        <h4 class="product-price">$49.99</h4>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 addbtn">
+                <div class="single-product">
+                    <div class="part-1">
+                        <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary btn-lg bigaddbutton">+ Add</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="deletemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete item</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete item?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                <button type="button" class="btn btn-primary">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addeditmodal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modal-lg">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete item</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+                <input class="form-control" type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                <button type="button" class="btn btn-primary">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="addeditmodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Default file input example</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="mb-3">
+            <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple>
+        </div>
+        <div class="mb-3">
+            <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+            <input class="form-control" type="file" id="formFileDisabled" disabled>
+        </div>
+        <div class="mb-3">
+            <label for="formFileSm" class="form-label">Small file input example</label>
+            <input class="form-control form-control-sm" id="formFileSm" type="file">
+        </div>
+        <div>
+            <label for="formFileLg" class="form-label">Large file input example</label>
+            <input class="form-control form-control-lg" id="formFileLg" type="file">
+        </div>
+    </div>
+</div>
+<script>
+
+    function callmodal() {
+        $('#exampleModal').modal('toggle');
+    }
+</script>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Open modal for ssdf</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Open modal for sdfsdf</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Open modal for sdf</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add New TShirt</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                        <input type="text" class="form-control" placeholder="Size" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+        </div>
+    </div>
+</div>
+

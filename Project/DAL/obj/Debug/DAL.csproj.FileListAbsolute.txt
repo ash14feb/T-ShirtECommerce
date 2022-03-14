@@ -1,0 +1,9 @@
+C:\Users\ashwa\source\repos\TShirtecommerce\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\ashwa\source\repos\TShirtecommerce\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\ashwa\source\repos\TShirtecommerce\DAL\bin\Debug\DAL.dll
+C:\Users\ashwa\source\repos\TShirtecommerce\DAL\bin\Debug\DAL.pdb
+C:\Users\ashwa\source\repos\TShirtecommerce\DAL\bin\Debug\BLL.dll
+C:\Users\ashwa\source\repos\TShirtecommerce\DAL\bin\Debug\BLL.pdb
+C:\Users\ashwa\source\repos\TShirtecommerce\DAL\obj\Debug\DAL.dll
+C:\Users\ashwa\source\repos\TShirtecommerce\DAL\obj\Debug\DAL.pdb
+C:\Users\ashwa\source\repos\TShirtecommerce\DAL\obj\Debug\DAL.csproj.CopyComplete
