@@ -15,9 +15,9 @@ Steps for Configuration
 6. 3.WebApi is a ASP.NET Web API Project
 7. Open WebAPI Project/ Web.Config
 8. Change the Connection String 	
-9. 	<connectionStrings>
+9
 		<add name="ConnectStr" connectionString="Data Source=localhost;Initial Catalog=NEWDB;Integrated Security=True " providerName="System.Data.SqlClient" />
-	</connectionStrings>
+
 10. For ex By default Windows Authentication is configured in the connection string <add name="ConnectStr" connectionString="Data Source=localhost;Initial Catalog=NEWDB;Integrated Security=True " providerName="System.Data.SqlClient" />
 11. Please change the DataSource, Initial Catalog as per the Name given in creating new db and Sql Server
 12. Open WebConfig of TShirtecommerce and update the API path
