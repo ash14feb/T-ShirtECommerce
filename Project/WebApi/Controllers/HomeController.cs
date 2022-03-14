@@ -16,11 +16,6 @@ namespace WebApi.Controllers
             return View();
         }
 
-        [HttpPost]
-        public JsonResult SaveFormSubmission(BLL.Product objsubscriber)
-        {
-            return Json("OK");
-
-        }
+ 
     }
 }
