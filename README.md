@@ -12,7 +12,7 @@ Folder Structure has
 
 DATABASE SETUP
 ------------------------------------------------------------------------------------
-1. CREATE A DB in MS SqlServer and Run below script on top of the newly created DB
+1. CREATE A blank database in MS SqlServer and Run below script on top of the newly created DB
 2. DB_Schema_TShirtecom.SQL
 
 APP SETUP
