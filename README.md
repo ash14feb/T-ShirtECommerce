@@ -19,4 +19,4 @@ Steps for Configuration
 10. Please change the DataSource, Initial Catalog as per the Name given in creating new db and Sql Server
 11. Open WebConfig of TShirtecommerce and update the API path
 12. 	For ex: <add key="BaseUrlAPI" value="https://localhost:44327/" />, If you are running the project from Visual Studio be default no need to change the BaseUrlApi key
-13. 	RUN the Prooject
+13. 	RUN the Project
