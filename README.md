@@ -24,7 +24,7 @@ WEB.CONFIG Change at WEBAPI Project
 		<add name="ConnectStr" connectionString="Data Source=localhost;Initial Catalog=NEWDB;Integrated Security=True " providerName="System.Data.SqlClient" />
 
 3. For ex By default Windows Authentication is configured in the connection string <add name="ConnectStr" connectionString="Data Source=localhost;Initial Catalog=NEWDB;Integrated Security=True " providerName="System.Data.SqlClient" />
-11. Please change the DataSource, Initial Catalog as per the Name given in creating new db and Sql Server
+11. Please change the DataSource, Initial Catalog as per the name given in creating new db and Sql Server
 
 WEB.CONFIG in MVC PROJECT
 ------------------------------------------------------------------------------------
@@ -39,3 +39,10 @@ PROJECT STRUCTURE
 3. APIAccessLib,DAL,BLL are Class Library Projects
 4. TShirtecommerce is a MVC Project
 5. WebApi is a ASP.NET Web API Project
+
+STEPS TO RUN
+----------------------------------------------------------------------------
+Once All configurations are done, 
+1. RUN WEBAPI Project
+2. RUN MVC Project
+3. Note: WEBAPI URL should be given in the MVC Project WEB Config
