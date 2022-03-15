@@ -54,7 +54,8 @@ namespace TShirtecommerce.Controllers
                     {
                         var qId = keys.Split('_')[0];
                         var file = Request.Files[keys];
-                        filename = file.FileName.Split('.')[0] + "_" + DateTime.Now.ToString("yyyyMMddHHmmssfff") + "." + file.FileName.Split('.')[1];
+                        FileInfo fi = new FileInfo(file.FileName);
+                        filename = "ProdImage" + "_" + DateTime.Now.ToString("yyyyMMddHHmmssfff") + "." + fi.Extension;
                         file.SaveAs(Server.MapPath("~/Content/ProdImages/") + filename);
                     }
 

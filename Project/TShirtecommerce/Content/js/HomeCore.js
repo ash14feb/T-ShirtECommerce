@@ -1,7 +1,7 @@
 ﻿
 $(document).ready(function () {
     $("#HomepageProducts").hide();
-    $("#loader").show();
+    $("#divloader").show();
     LoadHomeProducts();
     HandleModals();
   
@@ -47,7 +47,7 @@ function CallGetSuccess(data) {
 
     $("#divproducts").append(outputhtml);
     $("#HomepageProducts").show();
-    $("#loader").hide();
+    $("#divloader").hide();
 }
 function CallGetFailure(data) {
     alert("SOmething went wrong!");
@@ -109,16 +109,18 @@ var CallGetSuccessProdSingle = function (result) {
     $("#lbldescription").html(obj.Data[0].Description.trim());
     $("#lblcolour").html(obj.Data[0].Colour.trim());
     var obj = JSON.parse(result);
-    $("#drpSize option").each(function () {
-        if ($(this).text() == obj.Data[0].Size.trim()) {
-            $(this).attr('selected', 'selected');
-        }
-    });
-    $("#drpstyle option").each(function () {
-        if ($(this).text() == obj.Data[0].Style.trim()) {
-            $(this).attr('selected', 'selected');
-        }
-    });
+    $("#drpSize").val(obj.Data[0].Size.trim());
+    $("#drpstyle").val(obj.Data[0].Style.trim());
+    //$("#drpSize option").each(function () {
+    //    if ($(this).text() == obj.Data[0].Size.trim()) {
+    //        $(this).attr('selected', 'selected');
+    //    }
+    //});
+    //$("#drpstyle option").each(function () {
+    //    if ($(this).text() == obj.Data[0].Style.trim()) {
+    //        $(this).attr('selected', 'selected');
+    //    }
+    //});
     document.getElementById("imgbigprev").style.display = "block";
     var output = document.getElementById('imgbigprev');
     output.src = "../Content/ProdImages/" + obj.Data[0].Image;
@@ -152,19 +154,22 @@ function callAddProdmodal() {
     $('#AddEditProdModal').modal('show');
 }
 var CallGetSuccessProd = function (result) {
+    debugger;
     $("#btnAddUpdate").html("Update");
     $("#modaltitle").html("Edit a T-Shirt");
     var obj = JSON.parse(result);
-    $("#drpSize option").each(function () {
-        if ($(this).text() == obj.Data[0].Size.trim()) {
-            $(this).attr('selected', 'selected');
-        }
-    });
-    $("#drpstyle option").each(function () {
-        if ($(this).text() == obj.Data[0].Style.trim()) {
-            $(this).attr('selected', 'selected');
-        }
-    });
+    $("#drpSize").val(obj.Data[0].Size.trim());
+    $("#drpstyle").val(obj.Data[0].Style.trim());
+    //$("#drpSize option").each(function () {
+    //    if ($(this).text() == obj.Data[0].Size.trim()) {
+    //        $(this).attr('selected', 'selected');
+    //    }
+    //});
+    //$("#drpstyle option").each(function () {
+    //    if ($(this).text() == obj.Data[0].Style.trim()) {
+    //        $(this).attr('selected', 'selected');
+    //    }
+    //});
 
     document.getElementById("imgpreview").style.display = "block";
     var output = document.getElementById('imgpreview');
